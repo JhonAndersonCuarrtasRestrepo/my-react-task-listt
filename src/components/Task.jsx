@@ -9,17 +9,18 @@ function Task({ id, completeTask, deleteTask, texto, completed, editTask }) {
     // Cuando no esta en modo editar cuando editMoe esta en false, no se puede cambiar
     const [editMode, setEditMode] = useState(false);
     const [myText, setMyText] = useState(texto);
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const myTask = new TaskModel(id, myText, completed);
-        editTask(myTask)
-    }
-
+    
+     const handleSubmit = () => {
+         const myTask = new TaskModel(id, myText, completed);
+         editTask(myTask)
+     }
+   
     const myForm =
         <form onSubmit={handleSubmit}>
             <input type="text" value={myText} onChange={(e) => { setMyText(e.target.value) }} />
-            <button className="buttonEdit" type="submit">Edit</button>
+            <button className="buttonEdit" type="submit"  >Editar</button>         
         </form>
+
     //Manejador de eventos
 
     const handleEdit = () => {
