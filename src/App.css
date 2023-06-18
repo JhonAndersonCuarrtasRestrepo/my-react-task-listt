@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image:url(./image/imagenDeFondo.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  color: black;
+}
+
+/* Lista de tareas */
+
+.task-list{
+  width: 600px;
+  min-height: 450px;
+  background-color: #D2E9E9;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 40px;
+  border: solid rgb(170, 170, 170) 0.5px ;
+}
